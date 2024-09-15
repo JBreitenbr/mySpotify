@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body {
-  background-color: #262352;
+  background-color: #64748b;
 }
 
 .generale {
-  background-color: #262352;
-  /*color: white;*/
+  /*background-color: #262352;
+  color: white;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,3 +49,13 @@ border-radius: 50%;
 border: 3px solid #216c54;
 background-color: #bee4c4;
 background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox='0 0 24 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 18c0-1.105.887-2 1.998-2 1.104 0 2-.895 2.002-1.994V14v6h-4v-2zM0 13.998C0 12.895.888 12 2 12c1.105 0 2 .888 2 2 0 1.105.888 2 2 2 1.105 0 2 .888 2 2v2H0v-6.002zm16 4.004A1.994 1.994 0 0 1 14 20c-1.105 0-2-.887-2-1.998v-4.004A1.994 1.994 0 0 0 10 12c-1.105 0-2-.888-2-2 0-1.105-.888-2-2-2-1.105 0-2-.887-2-1.998V1.998A1.994 1.994 0 0 0 2 0a2 2 0 0 0-2 2V0h8v2c0 1.105.888 2 2 2 1.105 0 2 .888 2 2 0 1.105.888 2 2 2 1.105 0 2-.888 2-2 0-1.105.888-2 2-2 1.105 0 2-.888 2-2V0h4v6.002A1.994 1.994 0 0 1 22 8c-1.105 0-2 .888-2 2 0 1.105-.888 2-2 2-1.105 0-2 .887-2 1.998v4.004z' fill='%23216c54' fill-opacity='0.54' fill-rule='evenodd'/%3E%3C/svg%3E");}
+
+.spoti {
+margin-top: 30px;
+width: 167.5px;
+height: 167.5px;
+/*transform: scale(0.5);
+border-radius: 50%;
+border: 3px solid #216c54;*/
+background-color: #CBD5E1;
+background-image: url("data:image/svg+xml,%3Csvg width='167.5' height='167.5' viewBox='0 0 167.5 167.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12 -44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-3.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z' fill='%23fdba74' fill-opacity='0.54' fill-rule='evenodd'/%3E%3C/svg%3E");}

@@ -46,8 +46,8 @@ return (
 
 
   return (
-    <div className="generale" style={{position:"relative"}}>
-     <div className="bg-teal-300 flex flex-col" style={{position: "sticky",top:"0px",width:"100vw"}}> <h3 className="text-white">Julias Mucke</h3>
+    <div className="generale bg-slate-500" style={{position:"relative"}}>
+     <div className="bg-slate-300 flex flex-col" style={{position: "sticky",top:"0px",width:"100vw"}}> <h3 className="text-slate text-3xl mb-6">Julias Mucke</h3>
       <select onChange={handleLetter}>
       <option>--Select Letter--</option>
         {bandsDict.map(item=>
@@ -59,7 +59,7 @@ return (
         {bands.map(item=>
           <option key={item.name}>{item.name}</option>
         )}</select></div><br/>
-      {bandName=="none"?<div className="melted w-200 h-200"></div>:<ul className="grid grid-cols-2">{topItems}</ul>}
+      {bandName=="none"?<div className="spoti w-200 h-200"></div>:<ul className="grid grid-cols-2">{topItems}</ul>}
     </div>
   )
 }
