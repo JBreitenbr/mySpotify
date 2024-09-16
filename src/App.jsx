@@ -3,6 +3,7 @@ import {useState} from 'react'
 import {Tooltip} from 'react-tooltip'
 import {tDict} from './tracksDict'
 import {bandsDict} from './bandsDict'
+import tapes from './img/retro_tapes.jpg'
 
 
 export default function App() {
@@ -22,7 +23,7 @@ tDict[bandName].map(
 return (
  <><li key={index} >
    <div className="ml-4 mb-4"><a data-tooltip-id={`my-anchor-element-${index}`}>
-    <img src={item.imgUrl} height="80" width="80"/><Tooltip id={`my-anchor-element-${index}`}> <div style={{width:"80vw"}}><div><img src={item.imgUrl2} height="130" width="130"/><p className="text-md">{item.album}</p><p className="text-md">{item.release_date}</p></div><div><p className="text-xs">{item.tracks}</p></div></div></Tooltip></a>
+    <img src={item.imgUrl} className="h-20 w-20 sm:h-32 sm:w-32" style={{border:"1px solid #0f172a"}}/><Tooltip id={`my-anchor-element-${index}`}> <div style={{width:"80vw"}}><div><img src={item.imgUrl2} className="h-32 w-32"/><p className="text-md">{item.album}</p><p className="text-md">{item.release_date}</p></div><div><p className="text-xs">{item.tracks}</p></div></div></Tooltip></a>
    <a data-tooltip-id={`tooltip_${index}`} key={index}>
     <div className="text-sm sm:text-md mt-4 text-white">{item.track}</div>
     <Tooltip id={`tooltip_${index}`} key={index}>
@@ -47,19 +48,20 @@ return (
 
   return (
     <div className="generale bg-slate-500" style={{position:"relative"}}>
-     <div className="bg-slate-300 flex flex-col" style={{position: "sticky",top:"0px",width:"100vw"}}> <h3 className="text-slate text-3xl mb-6">Julias Mucke</h3>
-      <select onChange={handleLetter}>
+     <div className="bg-slate-300 flex flex-col" style={{position: "sticky",top:"0px",width:"100vw"}}>
+      {/*<img src={tapes} className="mb-6" style={{height:"100px"}}/>*/}<h3 className="text-white text-center text-5xl h-28 mb-6 test">Julias Mucke</h3>
+      <select className="mx-8" onChange={handleLetter}>
       <option>--Select Letter--</option>
         {bandsDict.map(item=>
           <option key={item.name}>{item.name}</option>
         )}
       </select>
-      <select onChange={handleBand}>
+      <select className="mb-6 mx-8" onChange={handleBand}>
         <option>--Select Band--</option>
         {bands.map(item=>
           <option key={item.name}>{item.name}</option>
         )}</select></div><br/>
-      {bandName=="none"?<div className="spoti w-200 h-200"></div>:<ul className="grid grid-cols-2">{topItems}</ul>}
+      {bandName=="none"?<div className="spoti mt-9"></div>:<ul className="grid grid-cols-2">{topItems}</ul>}
     </div>
   )
 }
