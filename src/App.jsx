@@ -49,7 +49,7 @@ return (
   return (
     <div className="generale bg-slate-500" style={{position:"relative"}}>
      <div className="bg-slate-300 flex flex-col" style={{position: "sticky",top:"0px",width:"100vw"}}>
-      {/*<img src={tapes} className="mb-6" style={{height:"100px"}}/>*/}<h3 className="text-white text-center text-5xl h-28 mb-6 test">Julias Mucke</h3>
+<h3 className="text-white text-center text-5xl h-28 mb-6 test">Julias Spotify</h3>
       <select className="mx-8" onChange={handleLetter}>
       <option>--Select Letter--</option>
         {bandsDict.map(item=>
@@ -61,7 +61,7 @@ return (
         {bands.map(item=>
           <option key={item.name}>{item.name}</option>
         )}</select></div><br/>
-      {bandName=="none"?<div className="spoti mt-9"></div>:<ul className="grid grid-cols-2">{topItems}</ul>}
+      {bandName=="none"?<div className="spoti mt-9 sm:mt-36"></div>:<ul className="grid grid-cols-2">{topItems}</ul>}
     </div>
   )
 }
