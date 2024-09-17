@@ -23,7 +23,7 @@ return (
    <div className="ml-4 mb-4"><a data-tooltip-id={`my-anchor-element-${index}`}>
     <img src={item.imgUrl} className="h-20 w-20 sm:h-32 sm:w-32" style={{border:"1px solid #0f172a"}}/><Tooltip id={`my-anchor-element-${index}`}> <div style={{width:"80vw"}}><div><img src={item.imgUrl2} className="h-32 w-32"/><p className="text-md">{item.album}</p><p className="text-md">{item.release_date}</p></div><div><p className="text-xs">{item.tracks}</p></div></div></Tooltip></a>
    <a data-tooltip-id={`tooltip_${index}`} key={index}>
-    <div className="text-base sm: text-xl md:text-2xl lg:text-3xl xl:text-4xl mt-4 text-white">{item.track}</div>
+    <div className="small-txt sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mt-4 text-white">{item.track}</div>
     <Tooltip id={`tooltip_${index}`} key={index}>
   <div className="tooltip">
     <ul>
