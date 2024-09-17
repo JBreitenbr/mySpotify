@@ -3,8 +3,6 @@ import {useState} from 'react'
 import {Tooltip} from 'react-tooltip'
 import {tDict} from './tracksDict'
 import {bandsDict} from './bandsDict'
-import tapes from './img/retro_tapes.jpg'
-
 
 export default function App() {
   let [letter, setLetter]=useState()
@@ -25,7 +23,7 @@ return (
    <div className="ml-4 mb-4"><a data-tooltip-id={`my-anchor-element-${index}`}>
     <img src={item.imgUrl} className="h-20 w-20 sm:h-32 sm:w-32" style={{border:"1px solid #0f172a"}}/><Tooltip id={`my-anchor-element-${index}`}> <div style={{width:"80vw"}}><div><img src={item.imgUrl2} className="h-32 w-32"/><p className="text-md">{item.album}</p><p className="text-md">{item.release_date}</p></div><div><p className="text-xs">{item.tracks}</p></div></div></Tooltip></a>
    <a data-tooltip-id={`tooltip_${index}`} key={index}>
-    <div className="text-sm sm:text-md mt-4 text-white">{item.track}</div>
+    <div className="text-base sm: text-xl md:text-2xl lg:text-3xl xl:text-4xl mt-4 text-white">{item.track}</div>
     <Tooltip id={`tooltip_${index}`} key={index}>
   <div className="tooltip">
     <ul>
@@ -49,7 +47,7 @@ return (
   return (
     <div className="generale bg-slate-500" style={{position:"relative"}}>
      <div className="bg-slate-300 flex flex-col" style={{position: "sticky",top:"0px",width:"100vw"}}>
-<h3 className="text-white text-center text-5xl h-28 mb-6 test">Julias Spotify</h3>
+<h3 className="text-white text-center text-6xl h-32 pt-8 mb-6 test" >Julias Spotify</h3>
       <select className="mx-8" onChange={handleLetter}>
       <option>--Select Letter--</option>
         {bandsDict.map(item=>
